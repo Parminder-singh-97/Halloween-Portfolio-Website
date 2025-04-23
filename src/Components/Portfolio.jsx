@@ -1,62 +1,170 @@
-import React from 'react'
-import WebProjectData from '../Data/ProjectData/WebProjectData'
+// import React from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { EffectCards, Autoplay } from "swiper/modules";
+// import WebProjectData from "../Data/ProjectData/WebProjectData"; // adjust path
+
+// import "swiper/css";
+// import "swiper/css/effect-cards";
+
+// const Portfolio = () => {
+//   return (
+//     <section className="bg-gradient-to-b from-black to-purple-950 py-20 spooky-font text-white">
+//       <h2 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-12 text-orange-500">
+//         🎃 Haunted Projects Slider
+//       </h2>
+
+//       <div className="w-[90%] md:w-[400px] mx-auto">
+//         <Swiper
+//           effect="cards"
+//           grabCursor={true}
+//           modules={[EffectCards, Autoplay]}
+//           autoplay={{
+//             delay: 3000,
+//             disableOnInteraction: false,
+//           }}
+//           loop={true}
+//         >
+//           {WebProjectData.map((project) => (
+//             <SwiperSlide
+//               key={project.id}
+//               className="bg-black border-2 border-orange-500 rounded-xl overflow-hidden shadow-2xl"
+//             >
+//               <div className="flex flex-col h-full justify-between">
+//                 <img
+//                   src={project.image}
+//                   alt={project.title}
+//                   className="h-48 object-cover w-full"
+//                 />
+//                 <div className="p-4 text-center">
+//                   <h3 className="text-xl text-orange-400 font-bold mb-2">
+//                     {project.title}
+//                   </h3>
+//                   <p className="text-sm mb-4">{project.description}</p>
+//                   <div className="flex justify-center gap-4">
+//                     <a
+//                       href={project.code}
+//                       target="_blank"
+//                       rel="noopener noreferrer"
+//                       className="bg-orange-500 hover:bg-orange-600 text-black font-semibold px-3 py-1 rounded"
+//                     >
+//                       Code
+//                     </a>
+//                     <a
+//                       href={project.live}
+//                       target="_blank"
+//                       rel="noopener noreferrer"
+//                       className="bg-lime-500 hover:bg-lime-600 text-black font-semibold px-3 py-1 rounded"
+//                     >
+//                       Live
+//                     </a>
+//                   </div>
+//                 </div>
+//               </div>
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Portfolio;
+
+
+
+
+
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, Autoplay } from "swiper/modules";
+import WebProjectData from "../Data/ProjectData/WebProjectData";
+
+import "swiper/css";
+import "swiper/css/effect-cards";
 
 const Portfolio = () => {
   return (
-    <>
-    <section  className='portfolio' >
-    <div className="my-workBlur-1"> </div>
+    <section className="relative bg-gradient-to-b from-black to-purple-950 py-20 spooky-font text-white overflow-hidden">
 
-    <section className="w-[80%] m-auto text-orange-200 spooky-font">
-      <h2 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-16">
-        🦇 My Haunted Projects
+      {/* 🎃 Halloween Animated Background Elements */}
+      <img
+        src="../../icons/flying-bat.png"
+        alt="bat"
+        className="absolute top-10 left-10 w-56 animate-bounce-slow opacity-70"
+      />
+      <img
+       src="../../icons/flying-bat.png"
+        alt="bat"
+        className="absolute top-[30%] right-5 w-56 animate-float-slow opacity-60"
+      />
+      <img
+        src="../../icons/glowing-eyes.png"
+        alt="eyes"
+        className="absolute bottom-8 left-6 w-40 animate-pulse opacity-90"
+      />
+      <img
+         src="../../icons/pumpkin.png"
+        alt="pumpkin"
+        className="absolute bottom-10 right-10 w-40 animate-wiggle opacity-80"
+      />
+
+      <h2 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-12 text-orange-500">
+        🎃 Haunted Web-Projects
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-6 md:px-12">
-        {WebProjectData.map((project) => (
-          <div key={project.id} className="group [perspective:1000px]">
-            <div className="relative h-[350px] w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Front */}
-              <div className="absolute inset-0 [backface-visibility:hidden] rounded-xl overflow-hidden border-2 border-orange-400 shadow-lg">
+      <div className="w-[70%] md:w-[400px] mx-auto">
+        <Swiper
+          effect="cards"
+          grabCursor={true}
+          modules={[EffectCards, Autoplay]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+        >
+          {WebProjectData.map((project) => (
+            <SwiperSlide
+              key={project.id}
+              className="bg-black border-2 border-orange-500 rounded-xl overflow-hidden shadow-2xl"
+            >
+              <div className="flex flex-col h-full justify-between">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="h-48 object-cover w-full"
                 />
-              </div>
-              {/* Back */}
-              <div className="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-black bg-opacity-80 rounded-xl p-6 flex flex-col justify-center items-center text-center">
-                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                <p className="text-sm mb-4">{project.description}</p>
-                <div className="flex gap-4">
-                  <a
-                    href={project.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-2 bg-orange-600 text-black font-semibold rounded hover:bg-orange-500 transition"
-                  >
-                    Code
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-2 bg-lime-500 text-black font-semibold rounded hover:bg-lime-400 transition"
-                  >
-                    Live
-                  </a>
+                <div className="p-4 text-center">
+                  <h3 className="text-xl text-orange-400 font-bold mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm mb-4">{project.description}</p>
+                  <div className="flex justify-center gap-4">
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-orange-500 hover:bg-orange-600 text-black font-semibold px-3 py-1 rounded"
+                    >
+                      Code
+                    </a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-lime-500 hover:bg-lime-600 text-black font-semibold px-3 py-1 rounded"
+                    >
+                      Live
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
-      
-    </section>
-      
-    </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

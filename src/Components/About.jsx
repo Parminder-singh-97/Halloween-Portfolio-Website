@@ -40,7 +40,7 @@ const About = () => {
             <a
               href="../../download/resume.pdf"
               target="_blank"
-              className="mt-4"
+              className="mb-10"
             >
               <button className="bg-orange-600 hover:bg-orange-700 transition duration-300 text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-orange-500/30">
                 🎃 Download Resume
