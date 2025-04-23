@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Links (optional) */}
-      <div className="mt-6 flex justify-center gap-6 text-xl">
+      <div className="mt-6 hidden md:flex justify-center gap-6 text-xl">
        
         <a
           href="mailto:parmindersinghdev@gmail.com"
