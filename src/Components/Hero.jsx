@@ -45,7 +45,7 @@ const Hero = () => {
     <div className='w-full h-screen blur-xl absolute top-0  left-0'></div>
 
 
-  <div className="left_side md:p-16 sm:p-16 p-20 bg-black md:bg-opacity-0 bg-opacity-55 min-h-screen md:w-[80%] w-full flex justify-center items-start " data-scroll data-scroll-speed="0.1" lerp='0.1'>
+  <div className="left_side md:p-16 p-8 bg-black md:bg-opacity-0 bg-opacity-55 min-h-screen md:w-[80%] w-full flex justify-center items-start " data-scroll data-scroll-speed="0.1" lerp='0.1'>
     <h3 className="left_1 ">WELCOME TO MY WORLD</h3>
     <h1 className="left_1">
       Hi I’m <span className='text-[clamp(1.8rem,5vw,3rem)] '  >Parminder Singh</span>{" "}
