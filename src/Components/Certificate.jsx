@@ -8,10 +8,10 @@ const Certificate = () => {
       <section className="blog">
         <div className="blur"></div>
 
-        <h1 className="pt-16 text-center text-[clamp(1.5rem,5vw,3rem)] ">
-          My Certificate & skills
-        </h1>
-
+       
+<h1 className="text-center text-[clamp(1.5rem,5vw,3rem)] font-extrabold text-orange-400 mb-16 spooky-font drop-shadow-md">
+My Certificate & Skills 🎃
+</h1>
         <div className="w-[80%] m-auto">
           <CustomSlider />
         </div>
@@ -28,3 +28,6 @@ const Certificate = () => {
 }
 
 export default Certificate
+
+
+

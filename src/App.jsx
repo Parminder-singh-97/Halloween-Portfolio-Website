@@ -6,6 +6,7 @@ import SocialLogo from "./Components/SocialLogo";
 import Portfolio from "./Components/Portfolio";
 import Blog from "./Components/Certificate";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Portfolio />
       <Blog />
       <Contact />
+      <Footer/>
     </>
   );
 };
