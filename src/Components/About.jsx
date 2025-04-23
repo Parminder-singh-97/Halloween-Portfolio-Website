@@ -3,8 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section className="relative ">
+      <section className="relative pb-6 ">
         <div className="my-aboutBlur-1"></div>
+        <div className="my-aboutBlur-2"></div>
 
         {/* Spooky Background Blurs */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-orange-700 rounded-full opacity-20 blur-3xl"></div>

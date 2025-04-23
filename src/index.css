@@ -60,7 +60,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 0, 0);
+  background-color: #f97316;
   outline: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
 } 
@@ -326,11 +326,11 @@ ul a{
 }
   .my-aboutBlur-2 {
     position: absolute;
-    top: -40px;
+    bottom: -40px;
     left: 0;
     width: 100%;
     height: 100px;
-  
+    z-index: 9;
     background-color: rgb(0, 0, 0);
     /* backdrop-filter: blur(5px); */
     filter: blur(22px);
@@ -400,7 +400,7 @@ backdrop-filter: blur(5px);
 /* --------------------Protfolio-------------------- */
 .portfolio{
   width: 100%;
-  min-height: 1000px;
+  min-height: 80vh;
   /* background-color: black; */
   background-image: url("/portfolio-bg.jpg");
   background-position: center;

@@ -84,7 +84,8 @@ import "swiper/css/effect-cards";
 
 const Portfolio = () => {
   return (
-    <section className="relative bg-gradient-to-b from-black to-purple-950 py-20 spooky-font text-white overflow-hidden">
+    // <section className=" portfolio relative text-white overflow-hidden">
+   <section className=" portfolio relative bg-gradient-to-b from-black to-purple-950 py-36 spooky-font text-white overflow-hidden"> 
 
       {/* 🎃 Halloween Animated Background Elements */}
       <img

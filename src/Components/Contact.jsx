@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="blur"></div>
         <div className='bg-black  opacity-50 min-h-screen w-full '>
 
-        <h2 className="text-center text-3xl font-bold text-orange-500 my-8 ">
+        <h2 className="text-center text-3xl font-bold text-orange-500 my-8 pt-16 ">
         ⚡ Contact Me ⚡
       </h2>
 
