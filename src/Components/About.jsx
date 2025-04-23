@@ -7,7 +7,7 @@ const About = () => {
         <div className="my-aboutBlur-1"></div>
         <div className="my-aboutBlur-2"></div>
 
-        <div className="about_me md:w-[80%] m-auto w-full min-h-screen flex md:flex-row flex-col justify-center items-center">
+        <div className="about_me md:w-[80%] m-auto w-full min-h-screen flex lg:flex-row flex-col justify-center items-center">
           <div className="my_image max-w-[70%]  ">
             <img
               className="rounded-full shadow-lg shadow-red-500"
@@ -20,7 +20,7 @@ const About = () => {
             <h1 className="font-extrabold md:text-start text-center mb-3 text-4xl">
               About Me
             </h1>
-            <p>
+            <p className="text-[clamp(1.5rem,1vw,2rem)]">
               Hi there! I'm a Front-end Developer with 2 years of experience in
               building responsive and user-friendly web applications using HTML,
               CSS, JavaScript, ReactJS, Bootstrap, TaiwindCSS, and API
