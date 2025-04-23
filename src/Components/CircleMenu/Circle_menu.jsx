@@ -19,8 +19,10 @@ const Circle_menu = () => {
           onClick={() => setIsOpenMenu(!isOpenMenu)}
         >
           {isOpenMenu ? (
+  
             <RxCross1 className=" fill-white m-4  " />
           ) : (
+            
             <IoMenu className=" fill-white m-4 " />
           )}
         </button>

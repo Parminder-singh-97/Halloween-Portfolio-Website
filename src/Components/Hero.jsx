@@ -36,12 +36,12 @@ const Hero = () => {
     <>
     <section className="hero">
   
-    <div className="spiders">
+    <div className="spiders left-28">
       <img src="/icons/spider-1.png" alt="spider" />
       <img src="/icons/spider-2.png" alt="spider" />
     </div>
     <>
-  <div className="bg_img relative md:bg-center bg-right-bottom  ">
+  <div className="bg_img relative md:bg-center bg-right-bottom ">
     <div className='w-full h-screen blur-xl absolute top-0  left-0'></div>
 
 
