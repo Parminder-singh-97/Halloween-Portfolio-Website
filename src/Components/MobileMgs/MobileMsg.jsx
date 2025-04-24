@@ -67,7 +67,10 @@ const MobileMsg = () => {
   const handleButtonClick = () => {
     setShow(false);
     if (audioRef.current) {
-      audioRef.current.play(); // Play the audio when button is clicked
+      audioRef.current.play().catch((error) => {
+        // Handle error if audio doesn't play
+        console.error("Audio play error:", error);
+      });
     }
   };
 
