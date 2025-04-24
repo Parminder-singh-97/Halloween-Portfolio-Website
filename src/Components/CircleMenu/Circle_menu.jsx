@@ -38,7 +38,7 @@ const Circle_menu = () => {
           <a href="#about" className=" text-orange-500">About</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
-          <FaBook className="text-white w-[100%] h-full cursor-pointer" />
+          <FaBook onClick={()=>{setIsOpenMenu(false);}} className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#projects" className=" text-orange-500">Portfolio</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
