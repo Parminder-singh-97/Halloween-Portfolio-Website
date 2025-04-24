@@ -9,18 +9,21 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import BackgroundAudio from "./Components/Bg-sound/BackgroundAudio";
 import Blog from "./Components/Blog";
+import MobileMsg from "./Components/MobileMgs/MobileMsg";
 
 const App = () => {
   return (
     <>
       <BackgroundAudio />
       <Navbar />
+
       <Hero />
       <About />
       <SocialLogo />
       <Portfolio />
+      <MobileMsg />
       <Certificate />
-      <Blog/>
+      <Blog />
       <Contact />
       <Footer />
     </>

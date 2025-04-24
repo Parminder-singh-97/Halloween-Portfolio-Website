@@ -29,27 +29,28 @@ const Circle_menu = () => {
         </button>
       </div>
       <div className="flex flex-col px-2 gap-3 ">
-        <div className="w-full h-14 flex flex-col justify-center items-center">
+        <div onClick={()=>{setIsOpenMenu(false);}} className="w-full h-14 flex flex-col justify-center items-center">
           <FaHome className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#home" className=" text-orange-500">Home</a>
         </div>
-        <div className="w-full h-14 flex flex-col justify-center items-center">
+        <div onClick={()=>{setIsOpenMenu(false);}} className="w-full h-14 flex flex-col justify-center items-center">
           <FaUserTie className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#about" className=" text-orange-500">About</a>
         </div>
-        <div className="w-full h-14 flex flex-col justify-center items-center">
-          <FaBook onClick={()=>{setIsOpenMenu(false);}} className="text-white w-[100%] h-full cursor-pointer" />
+        <div onClick={()=>{setIsOpenMenu(false);}}  className="w-full h-14 flex flex-col justify-center items-center">
+          
+          <FaBook className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#projects" className=" text-orange-500">Portfolio</a>
         </div>
-        <div className="w-full h-14 flex flex-col justify-center items-center">
+        <div onClick={()=>{setIsOpenMenu(false);}} className="w-full h-14 flex flex-col justify-center items-center">
           <GiWolfHead className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#skills" className=" text-orange-500">Skills</a>
         </div>
-        <div className="w-full h-14 flex flex-col justify-center items-center">
+        <div onClick={()=>{setIsOpenMenu(false);}} className="w-full h-14 flex flex-col justify-center items-center">
           <FaBlog className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#blog" className=" text-orange-500">Blog</a>
         </div>
-        <div className="w-full h-14 flex flex-col justify-center items-center">
+        <div onClick={()=>{setIsOpenMenu(false);}} className="w-full h-14 flex flex-col justify-center items-center">
           <RiContactsBook2Fill className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#contact" className=" text-orange-500">Contact</a>
         </div>
