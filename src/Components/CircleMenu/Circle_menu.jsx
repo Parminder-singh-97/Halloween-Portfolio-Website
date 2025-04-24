@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBlog, FaBook, FaHome, FaUserTie } from "react-icons/fa";
+import { GiWolfHead } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 import { RiContactsBook2Fill } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
@@ -11,7 +12,7 @@ const Circle_menu = () => {
     <div
       className={`${
         isOpenMenu ? "h-[400px] rounded-xl" : "h-[60px] rounded-full"
-      } w-16 overflow-hidden transition-all ease-linear fixed right-5 top-5 z-50 duration-700 bg-black/70  md:hidden  flex flex-col  items-center px-2 shadow-md shadow-red-500 `}
+      } w-16 overflow-hidden transition-all ease-linear fixed right-5 top-5 z-50 duration-700 bg-black/70  md:hidden  flex flex-col  items-center px-2 shadow-md shadow-orange-500 `}
     >
       <div>
         <button
@@ -30,23 +31,23 @@ const Circle_menu = () => {
       <div className="flex flex-col gap-3 ">
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <FaHome className="text-white w-[100%] h-full cursor-pointer" />
-          <p className="text-white">Home</p>
+          <a href="#home" className=" text-orange-500">Home</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <FaUserTie className="text-white w-[100%] h-full cursor-pointer" />
-          <p className="text-white">About</p>
+          <a href="#about" className=" text-orange-500">About</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <FaBook className="text-white w-[100%] h-full cursor-pointer" />
-          <p className="text-white">Portfolio</p>
+          <a href="#projects" className=" text-orange-500">Portfolio</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
-          <FaBlog className="text-white w-[100%] h-full cursor-pointer" />
-          <p className="text-white">Blog</p>
+          <GiWolfHead className="text-white w-[100%] h-full cursor-pointer" />
+          <a href="#skills" className=" text-orange-500">Skills</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <RiContactsBook2Fill className="text-white w-[100%] h-full cursor-pointer" />
-          <p className="text-white">Contact</p>
+          <a href="#contact" className=" text-orange-500">Contact</a>
         </div>
       </div>
     </div>

@@ -25,13 +25,14 @@ const Footer = () => {
       <div className="mt-6 hidden md:flex justify-center gap-6 text-xl">
        
         <a
-          href="mailto:parmindersinghdev@gmail.com"
+         href="mailto:s.pammi.22g@gmail.com"
+          target="_blank"
           className="hover:text-orange-500 transition duration-300"
         >
           🎃 Email
         </a>
         <a
-          href="/download/resume.pdf"
+          href="../../download/resume.pdf"
           target="_blank"
           className="hover:text-orange-500 transition duration-300"
         >

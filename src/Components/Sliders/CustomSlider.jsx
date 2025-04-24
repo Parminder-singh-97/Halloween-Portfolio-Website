@@ -74,7 +74,7 @@ const CustomSlider = () => {
       <img
         src={certificate.image}
         alt=""
-        style={{ width: "100%", height: "400px", objectFit: "contain" }}
+        style={{ width: "100%", height: "280px", objectFit: "cover" }}
       />
       <h3>{certificate.title}</h3>
     </SwiperSlide>

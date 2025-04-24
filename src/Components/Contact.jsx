@@ -43,7 +43,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="contact relative w-full  min-h-screen">
+      <section id="contact" className="contact relative w-full  min-h-screen">
         <div className="blur"></div>
         <div className=" min-h-screen w-full ">
           <h2 className="text-center text-3xl font-bold text-white my-8 pt-16 ">
@@ -52,18 +52,22 @@ const Contact = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="mt-9 max-w-md mx-auto p-6  bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg border border-orange-500"
-
+            className="mt-9 max-w-md mx-auto p-6 bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg shadow-orange-500 border-4 border-orange-500"
           >
-            <h2 className="text-2xl font-bold text-orange-800 text-center mb-6 ">
+            <h2 className="text-2xl font-bold text-orange-800 text-center mb-6">
               🎃 Haunted Contact Form
             </h2>
 
             <div className="mb-4">
-              <label className="block text-orange-300 font-semibold mb-2">
+              <label
+                htmlFor="name"
+                className="block text-orange-300 font-semibold mb-2"
+              >
                 Name:
               </label>
               <input
+                id="name"
+                name="name"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -73,10 +77,15 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-orange-300 font-semibold mb-2">
+              <label
+                htmlFor="email"
+                className="block text-orange-300 font-semibold mb-2"
+              >
                 Email:
               </label>
               <input
+                id="email"
+                name="email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -86,10 +95,15 @@ const Contact = () => {
             </div>
 
             <div className="mb-6">
-              <label className="block text-orange-300 font-semibold mb-2">
+              <label
+                htmlFor="message"
+                className="block text-orange-300 font-semibold mb-2"
+              >
                 Message:
               </label>
               <textarea
+                id="message"
+                name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required

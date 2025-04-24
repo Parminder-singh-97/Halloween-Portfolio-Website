@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 const JavaProjectsSlider = () => {
     return (
       <section className="py-20  text-white">
-        <h1 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-12 text-orange-500">
+        <h1 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-12 text-white">
           <span className="animate-pulse">👻</span> JavaScript Projects
         </h1>
 

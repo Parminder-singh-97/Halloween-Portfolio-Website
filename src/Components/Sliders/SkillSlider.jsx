@@ -118,9 +118,9 @@ const CustomSlider = () => {
         {CertificateData.map((certificate) => (
           <SwiperSlide
             key={certificate.id}
-            className="flex flex-col items-center justify-center w-[100px] h-[100px] hover:scale-110 transition-transform duration-300"
+            className="flex flex-col items-center justify-center w-[150px] h-[150px] hover:scale-110 transition-transform duration-300"
           >
-            <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center shadow-md shadow-orange-500 p-2">
+            <div className="w-[80px] h-[80px] rounded-full p-5 flex items-center justify-center shadow-md shadow-orange-500 ">
               <img
                 src={certificate.img}
                 alt={certificate.title}

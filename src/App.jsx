@@ -12,7 +12,7 @@ import BackgroundAudio from "./Components/Bg-sound/BackgroundAudio";
 const App = () => {
   return (
     <>
-    <BackgroundAudio/>
+      <BackgroundAudio />
       <Navbar />
 
       <Hero />
@@ -21,7 +21,7 @@ const App = () => {
       <Portfolio />
       <Blog />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 };
