@@ -22,9 +22,9 @@ const Blog = () => {
         </video>
 
         {/* Foreground Content */}
-        <div className="relative z-20   h-full text-white">
+        <div className="relative   h-full text-white">
           <h1 className=" text-center text-[clamp(1.5rem,5vw,3rem)] mt-10 text-orange-500 font-bold drop-shadow-xl">🧛‍♂️ Welcome to My Spooky Blog</h1>
-          <div>
+          <div className="pt-10">
             <BlogSwiper/>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, EffectCube } from "swiper/modules";
+import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 import blogData from "../../Data/BlogData/BlogData";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,39 +10,34 @@ const BlogSwiper = () => {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-10">
       <Swiper
-        modules={[Autoplay, EffectCube]}
-        effect={"cube"}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView="auto"
+        slidesPerView={"auto"}
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
+        loop={true}
         coverflowEffect={{
-          rotate: 30,
+          rotate: 0,
           stretch: 0,
-          depth: 100,
-          modifier: 2,
-          slideShadows: true,
+          depth: 120,
+          modifier: 2.5,
         }}
-        pagination={{ clickable: true }}
-        className="mySwiper"
+        
+        modules={[EffectCoverflow, Autoplay]}
+        className="w-full"
       >
-        {blogData.map((blog) => (
+        {blogData.map((fact) => (
           <SwiperSlide
-            key={blog.id}
-            className="max-w-sm bg-black bg-opacity-70 text-orange-300 rounded-xl overflow-hidden shadow-xl shadow-orange-500 backdrop-blur-md"
+            key={fact.id}
+            className="bg-gray-900 border border-orange-500 rounded-xl shadow-lg h-56 p-8 w-[350px] md:w-[400px] lg:w-[450px] text-center text-white"
           >
-            <img
-              src={blog.image}
-              alt={blog.title}
-              className="w-full h-60 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-bold text-orange-400 mb-2">{blog.title}</h3>
-              <p className="text-sm">{blog.description}</p>
-            </div>
+            <h3 className="text-2xl text-orange-400 font-bold mb-4">
+              {fact.title}
+            </h3>
+            <p className="text-base">{fact.description}</p>
           </SwiperSlide>
         ))}
       </Swiper>

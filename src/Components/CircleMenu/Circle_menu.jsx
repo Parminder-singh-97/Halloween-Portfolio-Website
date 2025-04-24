@@ -11,8 +11,8 @@ const Circle_menu = () => {
   return (
     <div
       className={`${
-        isOpenMenu ? "h-[400px] rounded-xl" : "h-[60px] rounded-full"
-      } w-16 overflow-hidden transition-all ease-linear fixed right-5 top-5 z-50 duration-700 bg-black/70  md:hidden  flex flex-col  items-center px-2 shadow-md shadow-orange-500 `}
+        isOpenMenu ? "h-[490px] rounded-xl" : "h-[65px] rounded-full"
+      } w-[70px] overflow-hidden transition-all ease-linear fixed right-5 top-5 z-[999] duration-700 bg-black/70  md:hidden  flex flex-col  items-center px-2  shadow-md shadow-orange-500 `}
     >
       <div>
         <button
@@ -28,7 +28,7 @@ const Circle_menu = () => {
           )}
         </button>
       </div>
-      <div className="flex flex-col gap-3 ">
+      <div className="flex flex-col px-2 gap-3 ">
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <FaHome className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#home" className=" text-orange-500">Home</a>
@@ -44,6 +44,10 @@ const Circle_menu = () => {
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <GiWolfHead className="text-white w-[100%] h-full cursor-pointer" />
           <a href="#skills" className=" text-orange-500">Skills</a>
+        </div>
+        <div className="w-full h-14 flex flex-col justify-center items-center">
+          <FaBlog className="text-white w-[100%] h-full cursor-pointer" />
+          <a href="#blog" className=" text-orange-500">Blog</a>
         </div>
         <div className="w-full h-14 flex flex-col justify-center items-center">
           <RiContactsBook2Fill className="text-white w-[100%] h-full cursor-pointer" />

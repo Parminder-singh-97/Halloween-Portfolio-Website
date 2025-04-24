@@ -15,7 +15,7 @@ const Portfolio = () => {
       <img
         src="../../icons/bat-icon.png"
         alt="bat"
-        className="absolute top-10 left-10 w-56 animate-bounce-slow "
+        className="absolute top-48 left-48 w-56 animate-bounce-slow "
       />
       <img
         src="../../icons/flying-bat.png"
@@ -45,6 +45,7 @@ const Portfolio = () => {
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
+         
           }}
           loop={true}
         >

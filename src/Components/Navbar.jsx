@@ -1,6 +1,7 @@
 import React from "react";
 import Circle_menu from "./CircleMenu/Circle_menu";
 import { GiWolfHead } from "react-icons/gi";
+import { FaBlog } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -35,6 +36,11 @@ const Navbar = () => {
             <a href="#skills" className="Blog_icon icon">
               <GiWolfHead className="text-5xl text-orange-500" />
               <p className="text-orange-500 font-extrabold">Skills</p>
+            </a>
+            {/* Blog */}
+            <a href="#blog" className="Blog_icon icon">
+              <FaBlog className="text-5xl text-orange-500" />
+              <p className="text-orange-500 font-extrabold">Blog</p>
             </a>
 
             {/* Contact */}

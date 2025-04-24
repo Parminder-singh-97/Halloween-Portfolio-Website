@@ -44,7 +44,20 @@ const Contact = () => {
   return (
     <>
       <section id="contact" className="contact relative w-full  min-h-screen">
+        <div className="bg-contact">
+          <video
+            className=" absolute top-0 left-0 w-full h-full object-cover md:bg-center bg-start -z-10"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="../contact-bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="blur"></div>
+        <div className="contactblur-bottm"></div>
         <div className=" min-h-screen w-full ">
           <h2 className="text-center text-[clamp(1.5rem,5vw,3rem)] font-bold text-orange-500 my-8 pt-16 ">
             ⚡ Contact Me ⚡

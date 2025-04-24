@@ -17,33 +17,9 @@ const responsive = {
 
 const CustomSlider = () => {
     
-    const items = CertificateData.map((certificate) => (
-        <div className="item" key={certificate.id} data-value={certificate.id}>
-          <img 
-            src={certificate.image} 
-            alt='' 
-            style={{ width: '100%', height: '400px', objectFit: 'contain' }}
-          />
-          <h3>{certificate.title}</h3>
-        </div>
-      ));
-    return(
-    // <>
-    // <AliceCarousel
-    //     mouseTracking
-    //     disableButtonsControls
-    //     disableDotsControls
-    //     disableSlideInfo
-    //     autoPlay
-    //     autoPlayInterval={3000}
-    //     infinite
-    //     items={items}
-    //     responsive={responsive}
-    //     controlsStrategy="alternate"
-    // />
     
-    // </>
-
+    return(
+   
     <>
    <Swiper
   spaceBetween={30}
@@ -67,7 +43,7 @@ const CustomSlider = () => {
 >
   {CertificateData.map((certificate) => (
     <SwiperSlide
-      className="item"
+      className="item border-4 shadow-md shadow-white border-orange-500 rounded-3xl overflow-hidden"
       key={certificate.id}
       data-value={certificate.id}
     >

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" text-orange-300 bg-black py-10 relative overflow-hidden">
+    <footer className=" text-orange-300 min-h-[400px] bg-black py-10 relative overflow-hidden">
       <div className="blur"></div>
       
       {/* Glowing Orbs */}

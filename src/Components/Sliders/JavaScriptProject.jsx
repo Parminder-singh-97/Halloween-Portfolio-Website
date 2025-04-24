@@ -25,6 +25,7 @@ const JavaProjectsSlider = () => {
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
+            reverseDirection: true,
           }}
           coverflowEffect={{
             rotate: 30,

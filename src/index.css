@@ -107,7 +107,7 @@ nav {
   top: 60px;
   z-index: 9999;
   left: 10px;
-
+  gap: 10px;
   width: 100px;
   border-radius: 15px;
   padding: 13px 20px;
@@ -117,7 +117,7 @@ nav {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
-  gap: 30px;
+ 
 }
 .menu_container .icon {
   display: flex;
@@ -129,10 +129,11 @@ nav {
   transition: scale 0.1s linear;
 }
 .menu_container i {
-  font-size: 40px;
+  font-size: 35px;
 }
 .menu_container .icon:hover {
-  scale: 1.3;
+  scale: 1.2;
+  color: #f97316;
 }
 
 ul {
@@ -324,6 +325,17 @@ ul a {
   /* backdrop-filter: blur(5px); */
   filter: blur(22px);
 }
+.contactblur-bottm {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  width: 100%;
+  height: 140px;
+
+  background-color: rgb(0, 0, 0);
+  /* backdrop-filter: blur(5px); */
+  filter: blur(22px);
+}
 
 .about_me {
   min-height: 100vh;
@@ -438,7 +450,8 @@ border: 1px solid rgba(0, 0, 0, 0.3); */
 }
 
 .contact {
-  background-image: url("../halloween.webp");
+  background-image: url("../contact-bg.mp4");
+  /* background-image: url("../halloween.webp"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

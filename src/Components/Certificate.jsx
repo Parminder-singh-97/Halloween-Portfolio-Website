@@ -5,7 +5,7 @@ import SkillSlider from "./Sliders/SkillSlider";
 const Certificate = () => {
   return (
     <>
-      <section id="skills" className="blog ">
+      <section id="skills" className="blog  ">
         <div className="blur"></div>
 
         <h1 className="text-center text-[clamp(1.5rem,5vw,3rem)] font-extrabold text-orange-400 mb-16 spooky-font drop-shadow-md">
