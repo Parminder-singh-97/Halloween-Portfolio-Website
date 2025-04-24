@@ -43,7 +43,7 @@ const JavaProjectsSlider = () => {
           {JavaProjectData.map((project) => (
             <SwiperSlide
               key={project.id}
-              className="w-72 bg-black/70 border border-orange-500 rounded-xl shadow-lg backdrop-blur-md"
+              className="w-72 bg-black/70 border-4 border-orange-500 rounded-xl shadow-lg backdrop-blur-md"
             >
               <img
                 src={project.image}

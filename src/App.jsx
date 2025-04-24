@@ -14,14 +14,14 @@ import MobileMsg from "./Components/MobileMgs/MobileMsg";
 const App = () => {
   return (
     <>
-      <BackgroundAudio />
+      {/* {/* <BackgroundAudio /> */}
+      <MobileMsg /> 
       <Navbar />
 
       <Hero />
       <About />
       <SocialLogo />
       <Portfolio />
-      <MobileMsg />
       <Certificate />
       <Blog />
       <Contact />
