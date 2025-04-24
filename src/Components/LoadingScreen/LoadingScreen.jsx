@@ -1,18 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const LoadingScreen = () => {
-//   const [loaded, setLoaded] = useState(false);
 
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setLoaded(true); // Set loaded to true after 2 seconds
-//     }, 2000);
-
-//     return () => clearTimeout(timer); // Clean up timeout on unmount
-//   }, []);
-
-  // If loaded, return null to hide the loading screen
-//   if (loaded) return null;
 
   return (
     <div className="fixed inset-0 z-[9999] bg-black flex flex-col items-center justify-center text-orange-500 font-halloween text-center transition-opacity duration-500">
