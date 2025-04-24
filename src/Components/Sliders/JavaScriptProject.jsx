@@ -36,7 +36,7 @@ const JavaProjectsSlider = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Autoplay, Pagination, EffectCoverflow]}
+          modules={[Autoplay, EffectCoverflow]}
           className="max-w-4xl mx-auto"
         >
           {JavaProjectData.map((project) => (

@@ -94,7 +94,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-2xl md:text-4xl font-bold">
-              a <span className="text-purple-400" ref={el}></span>
+              a <span className="text-purple-400 text-[clamp(1.8rem,5vw,3rem)]" ref={el}></span>
             </h2>
 
             <p className="text-white/90 md:w-3/4 font-medium">
