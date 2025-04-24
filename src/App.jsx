@@ -7,10 +7,12 @@ import Portfolio from "./Components/Portfolio";
 import Blog from "./Components/Certificate";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import BackgroundAudio from "./Components/Bg-sound/BackgroundAudio";
 
 const App = () => {
   return (
     <>
+    <BackgroundAudio/>
       <Navbar />
 
       <Hero />

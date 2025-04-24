@@ -5,7 +5,7 @@ import SkillSlider from "./Sliders/SkillSlider";
 const Certificate = () => {
   return (
     <>
-      <section className="blog">
+      <section className="blog ">
         <div className="blur"></div>
 
        

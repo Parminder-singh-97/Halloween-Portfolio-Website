@@ -81,22 +81,23 @@ import WebProjectData from "../Data/ProjectData/WebProjectData";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
+import JavaScriptProject from "./Sliders/JavaScriptProject";
 
 const Portfolio = () => {
   return (
     // <section className=" portfolio relative text-white overflow-hidden">
-   <section className=" portfolio relative bg-gradient-to-b from-black to-purple-950 py-36 spooky-font text-white overflow-hidden"> 
+   <section className=" portfolio relative bg-gradient-to-b from-black to-purple-950 pt-30 pb-36 spooky-font text-white overflow-hidden"> 
 
       {/* 🎃 Halloween Animated Background Elements */}
       <img
-        src="../../icons/flying-bat.png"
+        src="../../icons/bat-icon.png"
         alt="bat"
-        className="absolute top-10 left-10 w-56 animate-bounce-slow opacity-70"
+        className="absolute top-10 left-10 w-56 animate-bounce-slow "
       />
       <img
        src="../../icons/flying-bat.png"
         alt="bat"
-        className="absolute top-[30%] right-5 w-56 animate-float-slow opacity-60"
+        className="absolute top-[30%] right-5 w-64 animate-float-slow "
       />
       <img
         src="../../icons/glowing-eyes.png"
@@ -109,9 +110,9 @@ const Portfolio = () => {
         className="absolute bottom-10 right-10 w-40 animate-wiggle opacity-80"
       />
 
-      <h2 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb-12 text-orange-500">
-        🎃 Haunted Web-Projects
-      </h2>
+      <h1 className="text-center text-[clamp(2rem,5vw,3.5rem)] mb- text-orange-500">
+        <span className="animate-pulse">🎃</span> Haunted Web-Projects
+      </h1>
 
       <div className="w-[70%] md:w-[400px] mx-auto">
         <Swiper
@@ -133,7 +134,7 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-48 object-cover w-full"
+                  className="h-48 object-fill w-full"
                 />
                 <div className="p-4 text-center">
                   <h3 className="text-xl text-orange-400 font-bold mb-2">
@@ -164,6 +165,13 @@ const Portfolio = () => {
           ))}
         </Swiper>
       </div>
+
+      <div className="w-[80%] m-auto">
+
+      <JavaScriptProject/>
+
+      </div>
+
     </section>
   );
 };

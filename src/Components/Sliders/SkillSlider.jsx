@@ -89,9 +89,9 @@ import 'swiper/css';
 const CustomSlider = () => {
   return (
     <section className="py-10 bg-black text-white">
-      <h2 className="text-center text-3xl font-bold text-orange-500 mb-8 spooky-font">
+      <h1 className="text-center text-3xl font-bold text-orange-500 mb-8 spooky-font">
         ⚡ My Skills ⚡
-      </h2>
+      </h1>
 
       <Swiper
         dir="rtl"

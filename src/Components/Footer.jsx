@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className=" text-orange-300 py-10 relative overflow-hidden">
       
       {/* Glowing Orbs */}
-      <div className="absolute top-0 left-0 w-40 h-40 bg-purple-500 opacity-20 rounded-full blur-2xl animate-ping"></div>
+      <div className="absolute top-0 left-40 w-60 h-60 bg-purple-500 opacity-20 rounded-full blur-2xl animate-ping"></div>
       <div className="absolute bottom-0 right-0 w-40 h-40 bg-orange-500 opacity-20 rounded-full blur-2xl animate-pulse"></div>
 
       {/* Spider Icon (Optional) */}
