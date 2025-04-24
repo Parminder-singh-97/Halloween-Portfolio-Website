@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect } from "react";
 import Typed from "typed.js";
+import Circle_menu from "./CircleMenu/Circle_menu";
 
 const Hero = () => {
   const el = React.useRef(null);
@@ -24,6 +25,7 @@ const Hero = () => {
   return (
     <>
       <section id="" className="hero  ">
+      <Circle_menu />
         <div className="absolute top-5 left-36 w-16 z-50 animate-bounce">
           <img src="/icons/spider-1.png" alt="spider" />
         </div>

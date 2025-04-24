@@ -6,7 +6,7 @@ import { FaBlog } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav id="home">
-      <Circle_menu />
+     
       <div className="nav-container md:block hidden">
         <div className="logo">
           <img src="/logo/Parm.png" alt="Logo" />
