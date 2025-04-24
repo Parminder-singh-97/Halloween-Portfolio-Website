@@ -2,30 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 
 const MobileMsg = () => {
   const [show, setShow] = useState(false);
-  const audioRef = useRef(null);
+  
 
   useEffect(() => {
     if (window.innerWidth < 768) {
       setShow(true);
     }
-
-    // Preload audio once
-    audioRef.current = new Audio("/scary-noticeMoble-sound.mp3");
-    audioRef.current.load();
   }, []);
 
-  const playClickSound = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    audio.volume = 1;
-    audio.muted = false;
-
-    // Attempt to play on user interaction
-    audio.play().catch((err) => {
-      console.warn("Sound playback failed:", err);
-    });
-  };
+ 
 
   if (!show) return null;
 
@@ -46,13 +31,19 @@ const MobileMsg = () => {
 
         <button
           onClick={() => {
-            playClickSound();
+            
             setShow(false);
           }}
           className="px-5 py-2 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-lg shadow-md transition-all duration-300 ease-in-out border border-orange-300"
         >
           Got it, let me in! 🎃
         </button>
+
+        {/* Audio element with preload */}
+        <audio >
+          <source src="/scary-noticeMoble-sound.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
   );

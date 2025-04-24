@@ -1,33 +1,22 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import SocialLogo from "./Components/SocialLogo";
-import Portfolio from "./Components/Portfolio";
-import Certificate from "./Components/Certificate";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import BackgroundAudio from "./Components/Bg-sound/BackgroundAudio";
-import Blog from "./Components/Blog";
-import MobileMsg from "./Components/MobileMgs/MobileMsg";
+import { useEffect, useState } from "react";
+import Routers from "./Routers/Routers";// Your main site content
+import LoadingScreen from "./Components/LoadingScreen/LoadingScreen";
 
-const App = () => {
-  return (
-    <>
-       <BackgroundAudio /> 
-      <MobileMsg /> 
-      <Navbar />
+function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
-      <Hero />
-      <About />
-      <SocialLogo />
-      <Portfolio />
-      <Certificate />
-      <Blog />
-      <Contact />
-      <Footer />
-    </>
-  );
-};
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+
+    // Wait until all files (images, fonts, etc.) are loaded
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
+  return isLoading ? <LoadingScreen /> : <Routers/>;
+}
 
 export default App;
