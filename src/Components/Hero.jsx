@@ -23,16 +23,16 @@ const Hero = () => {
 
   return (
     <>
-      <section id="home" className="hero">
-        <div className="absolute top-5 left-36 w-16 animate-bounce">
+      <section id="home" className="hero  ">
+        <div className="absolute top-5 left-36 w-16 z-50 animate-bounce">
           <img src="/icons/spider-1.png" alt="spider" />
         </div>
-        <div className="absolute top-5 right-36 w-16 animate-bounce delay-1000">
+        <div className="absolute top-5 right-36 w-16 z-50 animate-bounce delay-1000">
           <img src="/icons/spider-2.png" alt="spider" />
         </div>
 
-        <div className="bg_img relative md:bg-center bg-right-bottom ">
-          <div className="w-full h-screen blur-xl absolute top-0  left-0"></div>
+        <div className="bg_img  md:bg-center bg-right-bottom ">
+          {/* <div className="w-full h-screen blur-xl absolute top-0  left-0"></div> */}
 
           <div
             className="left_side md:p-16 p-8 bg-black md:bg-opacity-0 bg-opacity-55 min-h-screen md:w-[80%] w-full flex justify-center items-start "
@@ -66,13 +66,13 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-col md:flex-row gap-4 mt-6">
-              <a href="/download/resume.pdf" target="_blank">
-                <button className="bg-orange-600 hover:bg-orange-700 px-6 py-3 rounded-full text-white font-bold shadow-md transition-all duration-300">
+              <a href="../../download/resume.pdf" target="_blank">
+                <button className="cursor-pointer bg-orange-600 hover:bg-orange-800 px-6 py-3 rounded-full text-white font-bold shadow-md transition-all duration-300">
                   🎃 Download Resume
                 </button>
               </a>
               <a href="https://github.com/Parminder-singh-97" target="_blank">
-                <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full text-white font-bold shadow-md transition-all duration-300">
+                <button className="cursor-pointer bg-purple-600 hover:bg-purple-800 px-6 py-3 rounded-full text-white font-bold shadow-md transition-all duration-300">
                   👻 Visit GitHub
                 </button>
               </a>

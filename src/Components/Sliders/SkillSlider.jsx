@@ -88,8 +88,8 @@ import 'swiper/css';
 
 const CustomSlider = () => {
   return (
-    <section className="py-10 bg-black text-white">
-      <h1 className="text-center text-3xl font-bold text-orange-500 mb-8 spooky-font">
+    <section className="py-10  text-white">
+      <h1 className="text-center text-[clamp(1.5rem,5vw,3rem)] font-bold text-orange-500 mb-8 spooky-font">
         ⚡ My Skills ⚡
       </h1>
 
@@ -120,7 +120,7 @@ const CustomSlider = () => {
             key={certificate.id}
             className="flex flex-col items-center justify-center w-[150px] h-[150px] hover:scale-110 transition-transform duration-300"
           >
-            <div className="w-[80px] h-[80px] rounded-full p-5 flex items-center justify-center shadow-md shadow-orange-500 ">
+            <div className="w-[80px] h-[80px] bg-black rounded-full p-5 flex items-center justify-center shadow-md shadow-white ">
               <img
                 src={certificate.img}
                 alt={certificate.title}

@@ -29,7 +29,9 @@ const About = () => {
             <h1 className="text-4xl font-black text-orange-400 spooky-font">
               🦇 About Me
             </h1>
-            <p className="text-[clamp(1rem,1.1vw,1.25rem)] leading-relaxed">
+            <p style={{
+    filter: `drop-shadow(0 0 10px black) drop-shadow(0 0 20px black) drop-shadow(0 0 30px black)`,
+  }} className="text-[clamp(1rem,1.1vw,1.25rem)]  leading-relaxed">
               Hi there! I'm a Front-end Developer with 2 years of experience in
               building spooky-good, responsive and user-friendly web apps using
               HTML, CSS, JavaScript, ReactJS, Bootstrap, TailwindCSS, and API

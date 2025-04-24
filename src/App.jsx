@@ -4,22 +4,23 @@ import Hero from "./Components/Hero";
 import About from "./Components/About";
 import SocialLogo from "./Components/SocialLogo";
 import Portfolio from "./Components/Portfolio";
-import Blog from "./Components/Certificate";
+import Certificate from "./Components/Certificate";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import BackgroundAudio from "./Components/Bg-sound/BackgroundAudio";
+import Blog from "./Components/Blog";
 
 const App = () => {
   return (
     <>
       <BackgroundAudio />
       <Navbar />
-
       <Hero />
       <About />
       <SocialLogo />
       <Portfolio />
-      <Blog />
+      <Certificate />
+      <Blog/>
       <Contact />
       <Footer />
     </>

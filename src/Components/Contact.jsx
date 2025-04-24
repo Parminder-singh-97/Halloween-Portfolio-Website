@@ -46,7 +46,7 @@ const Contact = () => {
       <section id="contact" className="contact relative w-full  min-h-screen">
         <div className="blur"></div>
         <div className=" min-h-screen w-full ">
-          <h2 className="text-center text-3xl font-bold text-white my-8 pt-16 ">
+          <h2 className="text-center text-[clamp(1.5rem,5vw,3rem)] font-bold text-orange-500 my-8 pt-16 ">
             ⚡ Contact Me ⚡
           </h2>
 
