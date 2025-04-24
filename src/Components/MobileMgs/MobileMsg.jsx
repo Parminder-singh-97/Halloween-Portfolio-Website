@@ -63,10 +63,10 @@ const MobileMsg = () => {
       setShow(true);
     }
   }, []);
-  console.log(audioRef.current)
-
+  
   const handleButtonClick = () => {
     setShow(false);
+    console.log(audioRef.current)
     if (audioRef.current) {
       audioRef.current.play().catch((error) => {
         // Handle error if audio doesn't play
