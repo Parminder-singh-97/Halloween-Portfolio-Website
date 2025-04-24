@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <>
-      <section id="home" className="hero  ">
+      <section id="" className="hero  ">
         <div className="absolute top-5 left-36 w-16 z-50 animate-bounce">
           <img src="/icons/spider-1.png" alt="spider" />
         </div>

@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 /* navbar ------------------------------- */
 
 nav {
-  position: sticky;
+  position: relative;
   top: 1px;
   left: 1px;
   z-index: 10;

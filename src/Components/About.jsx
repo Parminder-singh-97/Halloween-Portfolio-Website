@@ -23,7 +23,7 @@ const About = () => {
 
           {/* Content Section */}
           <div className="flex flex-col gap-4 w-full md:w-[60%] text-center md:text-left">
-            <h1 className="text-4xl font-black text-orange-400 spooky-font">
+            <h1 className="text-[clamp(1.2rem,5vw,3rem)] font-black text-orange-400 spooky-font">
               🦇 About Me
             </h1>
             <p style={{
