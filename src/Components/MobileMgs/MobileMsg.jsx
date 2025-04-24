@@ -53,6 +53,7 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
+import ScarySound from "../../assets/scary-noticeMoble-sound.mp3"
 
 const MobileMsg = () => {
   const [show, setShow] = useState(false);
@@ -101,7 +102,7 @@ const MobileMsg = () => {
 
         {/* Audio element with preload */}
         <audio ref={audioRef} preload="auto">
-          <source src="/scary-noticeMoble-sound.mp3" type="audio/mpeg" />
+          <source src={ScarySound} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
