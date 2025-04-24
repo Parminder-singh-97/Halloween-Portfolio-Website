@@ -63,6 +63,7 @@ const MobileMsg = () => {
       setShow(true);
     }
   }, []);
+  console.log(audioRef.current)
 
   const handleButtonClick = () => {
     setShow(false);
@@ -100,7 +101,7 @@ const MobileMsg = () => {
 
         {/* Audio element with preload */}
         <audio ref={audioRef} preload="auto">
-          <source src="/scary-noticeMoble-sound.mp3" type="audio/mpeg" />
+          <source src="../../../scary-noticeMoble-sound.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
