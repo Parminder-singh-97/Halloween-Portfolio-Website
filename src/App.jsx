@@ -8,7 +8,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration
+      duration: 1200, // animation duration
       once: true, // whether animation should happen only once
     });
   }, []);
