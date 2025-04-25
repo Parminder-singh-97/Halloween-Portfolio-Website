@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
 import Routers from "./Routers/Routers"; // Your main site content
 import LoadingScreen from "./Components/LoadingScreen/LoadingScreen";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true, // whether animation should happen only once
+    });
+  }, []);
 
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint as needed
