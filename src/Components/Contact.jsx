@@ -25,6 +25,7 @@ const Contact = () => {
         // Replace with your actual Google Apps Script URL
         method: "POST",
         body: formData,
+        mode: 'no-cors'
       }
     )
       .then((response) => response.text())
